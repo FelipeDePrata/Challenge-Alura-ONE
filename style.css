@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --azul-dark: #0A3871;
+    --cor-f6: #f6f6f6;
+    --cor-fundo: #D5DFE5;
+    --fonte-inter: "Inter", sans-serif;
+}
+
+body, header, footer{
+    background-color: var(--cor-fundo);
+    box-sizing: border-box;
+}
+.logo{
+    padding: 12px;
+}
+
+.areaTotal{
+    padding: 2%;
+}
+.meio{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    padding: 2% 0 0 2%;
+}
+
+#input_texto{
+    width: 450px;
+    height: 500px;
+    border: none;
+    resize: none;
+    padding: 2%;
+    font-family: var(--fonte-inter);
+    font-size: 16px;
+    color: var(--azul-dark);
+    background-color: var(--cor-fundo);
+    text-transform: uppercase;
+}
+
+.txtarea::placeholder{
+    font-family: var(--fonte-inter);
+    color: var(--azul-dark);
+}
+
+#saida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 700px;
+    border: solid var(--azul-dark);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--fonte-inter);
+}
+
+.missingMsg{
+    font-family: var(--fonte-inter);
+    font-weight: 700;
+    font-size: 25px;}
+
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    height: 67px;
+}
+
+.botaoCripto{
+    padding: 16px;
+    border: 2px solid var(--azul-dark);
+    border-radius: 24px;
+    width: 328px;
+    font-size: 16px;
+    font-family: var(--fonte-inter);
+    background-color: var(--azul-dark);
+    color: var(--cor-f6)
+}
+
+.botaoDescripto{
+    padding: 16px;
+    border: 2px solid var(--azul-dark);
+    border-radius: 24px;
+    width: 328px;
+    font-size: 16px;
+    font-family: var(--fonte-inter);
+    background-color: var(--cor-fundo);
+    color: var(--azul-dark)
+}
+
+.copiar{
+    margin-top: 16px;
+    padding: 16px;
+    border: 2px solid var(--azul-dark);
+    border-radius: 24px;
+    width: 328px;
+    font-size: 16px;
+    font-family: var(--fonte-inter);
+    background-color: var(--cor-fundo);
+    color: var(--azul-dark)
+}
+
+@media(max-width: 1700px){
+    .areaTotal{
+        display: flex;
+        flex-direction: column;
+    }
+    .meio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #input_texto::placeholder{
+        font-size: 24px;
+    }
+    #input_texto{
+        padding: 2%;
+        width: 90%;
+        height: 20%;
+        font-size: 60%;
+    }
+    #saida{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 4%;
+    }
+    .arte{
+        display: none;
+    }
+    }
+    .botoes{
+        flex-direction: column;
+        padding: 2%;
+    }
+    .botaoCripto{
+        width: 30%;
+    }
+    .botaoDescripto{
+        width: 30%;
+    }
